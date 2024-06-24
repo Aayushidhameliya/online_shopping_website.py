@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Ecommerce Website{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Add any additional CSS or meta tags here -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <!-- Add more navigation links here -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Content of each specific page will go here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ecommerce Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional: Add any JavaScript scripts here -->
+</body>
+</html>
