@@ -1,0 +1,13 @@
+-- products table schema
+CREATE TABLE products (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    price REAL NOT NULL,
+    description TEXT
+);
+
+-- insert sample data
+INSERT INTO products (name, price, description) VALUES
+    ('Product 1', 10.99, 'Description of Product 1'),
+    ('Product 2', 19.99, 'Description of Product 2'),
+    ('Product 3', 7.99, 'Description of Product 3');
